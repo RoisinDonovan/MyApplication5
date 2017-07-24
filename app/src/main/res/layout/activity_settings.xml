@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.katiedennehy.myapplication.SettingsActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/avatar"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/user_single_image" />
+
+    <TextView
+        android:text="@string/hi_there_i_m_using_p2p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/settings_status"
+        android:textSize="18sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Change Image"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="109dp"
+        android:id="@+id/settings_img_btn"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:layout_width="140dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="Display Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/settings_display_name"
+        android:textSize="24sp"
+        android:layout_above="@+id/settings_status"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Change Status"
+        android:layout_height="40dp"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/settings_status_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/settings_img_btn"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:layout_width="140dp" />
+
+</RelativeLayout>
